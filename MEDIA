@@ -1,0 +1,21 @@
+package Exercise4;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+public class Media extends Fan{
+    
+    private int totalPrice,totalWeight;
+    
+    public int calTotal(){
+        totalPrice = super.getPrice()*super.getQuantity();
+        return totalPrice;
+    }
+    
+    public int calWeight(){
+        totalWeight = super.getWeight()*super.getQuantity();
+        return totalWeight;
+    }
+    
+}
