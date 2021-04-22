@@ -1,0 +1,24 @@
+package Exercise4;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Fan objFan = new Fan();
+        System.out.println("");
+        System.out.println(objFan.getString());
+        System.out.println("");
+        
+        Media objMedia = new Media();
+        System.out.println("Total Price is RM"+objMedia.calTotal());
+        System.out.println("Total Weight Is "+objMedia.calTotal()+"gm");
+    }
+    
+}
