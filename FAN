@@ -1,0 +1,56 @@
+package Exercise4;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+import java.util.Scanner;
+public class Fan {
+    Scanner scan = new Scanner(System.in);
+    private String Brand,Colour;
+    private int price,weight,quantity;
+    
+	//DEFAULT CONSTRUCTOR
+	Fan(){
+		System.out.print("Enter The Brand Of The Fan\t: ");
+		this.Brand=scan.nextLine();
+                
+		System.out.print("Enter The Colour Of The Fan\t: ");
+		this.Colour=scan.nextLine();
+                
+                System.out.println("Enter The Price Of The Fan\t: ");
+                this.price=scan.nextInt();
+                
+                System.out.println("Enter The Weight Of The Fan\t: ");
+                this.weight=scan.nextInt();
+                
+                System.out.println("Enter The Quantity Purchased\t: ");
+                this.quantity=scan.nextInt();
+	}
+        
+        public String getBrand(){
+            return Brand;
+        }
+        
+        public String getColour(){
+            return Colour;
+        }
+        
+        public int getPrice(){
+            return price;
+        }
+        
+        public int getWeight(){
+            return weight;
+        }
+        
+        public int getQuantity(){
+            return quantity;
+        }
+        
+        public String getString(){
+            return "Brand is "+Brand+"\nColour is "+Colour+"\nPrice is RM"+price+"\nWeight is "+weight+"gm"+"\nQuantity Purchased is "+quantity;
+        }
+            
+       
+}
